@@ -13,6 +13,8 @@
 <body>
     @include('component.header')
 
+    @include('component.footer')
+
 </body>
 <script src="{{ asset('assets/js/plugins.js') }}"></script>
 <script src="{{ asset('assets/js/theme.js') }}"></script>
