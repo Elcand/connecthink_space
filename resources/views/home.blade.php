@@ -27,4 +27,5 @@
     </section>
 
     @include('studio')
+    @include('contact')
 @endsection
