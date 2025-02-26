@@ -25,5 +25,6 @@
             </div>
         </div>
     </section>
-    <br>
+
+    @include('studio')
 @endsection
