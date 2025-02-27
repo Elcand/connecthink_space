@@ -32,10 +32,13 @@
             <div class="col-md-4 col-lg-2">
                 <div class="widget">
                     <h4 class="widget-title text-white mb-3">Get in Touch</h4>
-                    <address> <a href="http://"  style="transform: ">Jl. Tanjungsari I No.18, Sumurboto, Kec.
+                    <address> <a href="https://maps.app.goo.gl/HcqfoVCdgrHujgwf7" target="_blank"
+                            style="transform: ">Jl.
+                            Tanjungsari I
+                            No.18, Sumurboto, Kec.
                             Banyumanik, Kota Semarang</a>
                     </address>
-                    <a href="mailto:first.last@email.com">exsemple@gmail.com</a><br /> 0822-2758-5095
+                    <a href="mailto:first.last@email.com">exsemple@gmail.com</a><br /> 082 227 585 095
                 </div>
             </div>
         </div>
