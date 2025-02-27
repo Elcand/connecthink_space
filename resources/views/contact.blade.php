@@ -1,6 +1,6 @@
 @section('title', 'Contact Us')
 
-<section id="snippet-5" class="wrapper bg-light wrapper-border">
+<section id="contact" class="wrapper bg-light wrapper-border">
     <div class="container pt-15 pt-md-17 pb-13 pb-md-15">
         <div class="row">
             <div class="col-xl-10 mx-auto">

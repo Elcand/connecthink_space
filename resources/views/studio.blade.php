@@ -1,6 +1,6 @@
 @section('title', 'List Studio')
 
-<section id="snippet-3" class="wrapper bg-light wrapper-border">
+<section id="studio" class="wrapper bg-light wrapper-border">
     <div class="container pt-15 pt-md-17 pb-13 pb-md-15">
         <div class="row">
             <div class="col-lg-9 col-xl-8 col-xxl-7 mx-auto">
@@ -22,9 +22,6 @@
                         </figure>
                         <div class="card-body">
                             <div class="post-header">
-                                <div class="post-category text-line">
-                                    <a href="#" class="hover" rel="category">Coding</a>
-                                </div>
                                 <h2 class="post-title h3 mt-1 mb-3">
                                     <a class="link-dark" href="#">Lab Name 1</a>
                                 </h2>
@@ -47,9 +44,6 @@
                         </figure>
                         <div class="card-body">
                             <div class="post-header">
-                                <div class="post-category text-line">
-                                    <a href="#" class="hover" rel="category">Coding</a>
-                                </div>
                                 <h2 class="post-title h3 mt-1 mb-3">
                                     <a class="link-dark" href="#">Lab Name 2</a>
                                 </h2>
@@ -72,9 +66,6 @@
                         </figure>
                         <div class="card-body">
                             <div class="post-header">
-                                <div class="post-category text-line">
-                                    <a href="#" class="hover" rel="category">Coding</a>
-                                </div>
                                 <h2 class="post-title h3 mt-1 mb-3">
                                     <a class="link-dark" href="#">Lab Name 3</a>
                                 </h2>

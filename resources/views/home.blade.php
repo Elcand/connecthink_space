@@ -3,7 +3,7 @@
 @section('title', 'Home')
 
 @section('content')
-    <section class="wrapper bg-dark">
+    <section class="wrapper bg-dark" id="home">
         <div class=" swiper-fullscreen nav-dark" data-margin="0">
             <div class="swiper">
                 <div>
@@ -17,7 +17,7 @@
                     <div class="row">
                         <div class="col-lg-8 mx-auto mt-18 text-center">
                             <h1 class="fs-25 text-uppercase ls-xl text-white mb-3">
-                                Welcome</h1>
+                                Welcome to</h1>
                             <h2 class="display-1 fs-55 text-white mb-0">ConnecThink Space</h2>
                         </div>
                     </div>
