@@ -10,72 +10,30 @@
         </div>
         <div class="container">
             <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card h-100">
-                        <figure class="card-img-top overlay overlay-1 hover-scale">
-                            <a href="#">
-                                <img src="{{ asset('assets/img/studio.jpeg') }}" alt="" class="img-fluid" />
-                            </a>
-                            <figcaption>
-                                <h5 class="from-top mb-0">Read More</h5>
-                            </figcaption>
-                        </figure>
-                        <div class="card-body">
-                            <div class="post-header">
-                                <h2 class="post-title h3 mt-1 mb-3">
-                                    <a class="link-dark" href="#">Lab Name 1</a>
-                                </h2>
-                            </div>
-                            <div class="post-content">
-                                <p>Description</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <figure class="card-img-top overlay overlay-1 hover-scale">
-                            <a href="#">
-                                <img src="{{ asset('assets/img/studio.jpeg') }}" alt="" class="img-fluid" />
-                            </a>
-                            <figcaption>
-                                <h5 class="from-top mb-0">Read More</h5>
-                            </figcaption>
-                        </figure>
-                        <div class="card-body">
-                            <div class="post-header">
-                                <h2 class="post-title h3 mt-1 mb-3">
-                                    <a class="link-dark" href="#">Lab Name 2</a>
-                                </h2>
-                            </div>
-                            <div class="post-content">
-                                <p>Description</p>
+                @foreach ($studios as $studio)
+                    <div class="col">
+                        <div class="card h-100">
+                            <figure class="card-img-top overlay overlay-1 hover-scale">
+                                <a href="#">
+                                    <img src="{{ asset('storage/') }}" alt="" class="img-fluid" />
+                                </a>
+                                <figcaption>
+                                    <h5 class="from-top mb-0">Read More</h5>
+                                </figcaption>
+                            </figure>
+                            <div class="card-body">
+                                <div class="post-header">
+                                    <h2 class="post-title h3 mt-1 mb-3">
+                                        <a class="link-dark" href="#">Lab Name 1</a>
+                                    </h2>
+                                </div>
+                                <div class="post-content">
+                                    <p>Description</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <figure class="card-img-top overlay overlay-1 hover-scale">
-                            <a href="#">
-                                <img src="{{ asset('assets/img/studio.jpeg') }}" alt="" class="img-fluid" />
-                            </a>
-                            <figcaption>
-                                <h5 class="from-top mb-0">Read More</h5>
-                            </figcaption>
-                        </figure>
-                        <div class="card-body">
-                            <div class="post-header">
-                                <h2 class="post-title h3 mt-1 mb-3">
-                                    <a class="link-dark" href="#">Lab Name 3</a>
-                                </h2>
-                            </div>
-                            <div class="post-content">
-                                <p>Description</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
 

@@ -1,4 +1,4 @@
-@extends('component.layout')
+@section('title', 'Contact Us')
 
 <section id="contact" class="wrapper bg-light wrapper-border">
     <div class="container pt-15 pt-md-17 pb-13 pb-md-15">
@@ -69,7 +69,8 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="d-flex flex-row">
-                            <div class="icon text-primary fs-28 me-4 mt-n1"><i class="fa-solid fa-location-dot"></i>
+                            <div class="icon text-primary fs-28 me-4 mt-n1"><i class="fa-solid fa-location-dot"
+                                    style="color:#222d3f;"></i>
                             </div>
                             <div>
                                 <h5 class="mb-1">Address</h5>
@@ -77,7 +78,8 @@
                             </div>
                         </div>
                         <div class="d-flex flex-row">
-                            <div class="icon text-primary fs-28 me-4 mt-n1"><i class="fa-solid fa-phone-volume"></i>
+                            <div class="icon text-primary fs-28 me-4 mt-n1"><i class="fa-solid fa-phone-volume"
+                                    style="color: #222d3f;"></i>
                             </div>
                             <div>
                                 <h5 class="mb-1">Phone</h5>
@@ -85,7 +87,8 @@
                             </div>
                         </div>
                         <div class="d-flex flex-row">
-                            <div class="icon text-primary fs-28 me-4 mt-n1"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="icon text-primary fs-28 me-4 mt-n1"><i class="fa-solid fa-envelope"
+                                    style="color:#222d3f"></i></div>
                             <div>
                                 <h5 class="mb-1">E-mail</h5>
                                 <p>exsample@gmail.com</p>
