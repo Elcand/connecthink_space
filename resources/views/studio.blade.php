@@ -1,41 +1,37 @@
 @section('title', 'List Studio')
 
-<section id="studio" class="wrapper bg-light wrapper-border">
-    <div class="container pt-15 pt-md-17 pb-13 pb-md-15">
-        <div class="row">
-            <div class="col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                <h2 class="fs-15 text-uppercase text-primary text-center">List Studio</h2>
-                <h3 class="display-4 mb-6 text-center">Description</h3>
+<div class="container mt-10">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @if ($studios->isEmpty())
+            <div class="col-12 text-center">
+                <p class="text-muted">Tidak ada studio tersedia saat ini.</p>
             </div>
-        </div>
-        <div class="container">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                @foreach ($studios as $studio)
-                    <div class="col">
-                        <div class="card h-100">
-                            <figure class="card-img-top overlay overlay-1 hover-scale">
-                                <a href="#">
-                                    <img src="{{ asset('storage/') }}" alt="" class="img-fluid" />
-                                </a>
-                                <figcaption>
-                                    <h5 class="from-top mb-0">Read More</h5>
-                                </figcaption>
-                            </figure>
-                            <div class="card-body">
-                                <div class="post-header">
-                                    <h2 class="post-title h3 mt-1 mb-3">
-                                        <a class="link-dark" href="#">Lab Name 1</a>
-                                    </h2>
-                                </div>
-                                <div class="post-content">
-                                    <p>Description</p>
-                                </div>
+        @else
+            @foreach ($studios as $studio)
+                <div class="col">
+                    <div class="card h-100">
+                        <figure class="card-img-top overlay overlay-1 hover-scale">
+                            <a href="#">
+                                <img src="{{ asset('assets/img/' . $studio->image) }}"
+                                    alt="{{ $studio->name_labs ?? 'Studio' }}" class="img-fluid" />
+                            </a>
+                            <figcaption>
+                                <h5 class="from-top mb-0">Read More</h5>
+                            </figcaption>
+                        </figure>
+                        <div class="card-body">
+                            <div class="post-header">
+                                <h2 class="post-title h3 mb-3">
+                                    <a class="link-dark" href="#">{{ $studio->name_labs }}</a>
+                                </h2>
+                            </div>
+                            <div class="post-content">
+                                <p>{{ $studio->description }}</p>
                             </div>
                         </div>
                     </div>
-                @endforeach
-            </div>
-        </div>
-
+                </div>
+            @endforeach
+        @endif
     </div>
-</section>
+</div>

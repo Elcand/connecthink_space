@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Models\Studio;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class StudioSeeder extends Seeder
 {
@@ -17,17 +18,21 @@ class StudioSeeder extends Seeder
             [
                 'name_labs' => 'NineDragonLabs',
                 'description' => 'NineDragonLabs is a cutting-edge studio specializing in innovative virtual reality and augmented reality applications.',
-                'image' => 'https://example.com/images/9dragonlabs.jpg',
+                'image' => 'lab.jpeg',
             ],
             [
                 'name_labs' => 'NaTech',
                 'description' => 'NaTech is a cutting-edge studio specializing in virtual reality and augmented reality applications',
-                'image' => 'https://example.com/images/natech.jpg',
+                'image' => 'lab.jpeg',
             ],
         ];
 
         foreach ($studios as $studio) {
-            Studio::create($studio);
+            DB::table('studios')->insert([
+                'name_labs' => $studio['name_labs'],
+                'description' => $studio['description'],
+                'image' => $studio['image'],
+            ]);
         }
     }
 }
